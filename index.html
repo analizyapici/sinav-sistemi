@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Sınav Sistemi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div id="app" class="app-card">
+    <div id="loginHeader" class="header-bg">
+      <h1 class="text-2xl font-extrabold">Öğrenci Girişi</h1>
+    </div>
+    <div id="connectionStatus" class="hidden mb-4 text-xs font-bold text-center p-2 rounded border"></div>
+    <div id="mainContentArea" class="flex-grow flex flex-col">
+      <div id="loadingIndicator" class="text-center py-10">
+        <div class="loader"></div>
+        <p class="text-sm text-gray-500 mt-4 font-bold">Sistem Başlatılıyor...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="customModal" class="fixed inset-0 bg-gray-900 bg-opacity-70 hidden items-center justify-center p-4 z-50">
+    <div id="modalContent" class="bg-white rounded-xl p-6 max-w-4xl w-full text-center shadow-2xl overflow-y-auto max-h-[95vh]"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

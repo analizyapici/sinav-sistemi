@@ -1,0 +1,89 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app-card {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 450px;
+  width: 90%;
+  transition: all 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-bg {
+  background: linear-gradient(135deg, #4f46e5 0%, #818cf8 100%);
+  color: white;
+  padding: 1rem 0;
+  border-radius: 1rem 1rem 0 0;
+  margin: -2.5rem -2.5rem 1.5rem -2.5rem;
+  text-align: center;
+}
+
+.button {
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-mode {
+  max-width: 1400px !important;
+  width: 98% !important;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.paste-area {
+  border: 2px dashed #cbd5e0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  cursor: text;
+  min-height: 120px;
+}
+.paste-area:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.stat-tab-btn {
+  padding: 8px 16px;
+  border-bottom: 2px solid transparent;
+  color: #6b7280;
+  font-weight: 600;
+  cursor: pointer;
+}
+.stat-tab-btn.active {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
